@@ -111,15 +111,15 @@
         offset: '80%'
     });
     // Dark Mode 
-    var cv_theme = 'light';
+    var cv_theme = 'dark';
     $('.mode-btn').on('click', () => {
         body.toggleClass('dark');
-        if(!body.hasClass('dark')){
-            $('.mode-text').text('Dark Mode');
+        if(body.hasClass('dark')){
+            $('.mode-text').text('Light Mode');
             cv_theme = 'light';            
         }
         else  {
-            $('.mode-text').text('Light Mode');
+            $('.mode-text').text('Dark Mode');
             cv_theme = 'dark';
         }
     });
@@ -134,7 +134,7 @@
     $('.form-btn').confirm({
         theme: 'supervan',
         title: "",
-        content: "This function use php and doesn't support by github. Thank you.",
+        content: "Thank you so much for contacting me!",
         buttons: {
             okay: function(){
                 $('.contact input').val('');
